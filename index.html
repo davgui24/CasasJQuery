@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Casas</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		<script type="text/javascript" src="javascript/listar.js"></script>
+	<script type="text/javascript" src="javascript/ingresar.js"></script>
+	<script type="text/javascript" src="javascript/editar.js"></script>
+	<script type="text/javascript" src="javascript/eliminar.js"></script>
+
+
+	<div class="container formulario" id="formulario1">
+		<div class="row">
+			<div class="col-6">
+				<form id="formulario">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Ingrese el código de la casa</label>
+						<input class="form-control entrada pr-5" required type="number" id="codigo" name="codigo">
+
+						<label for="exampleInputEmail1">Ingrese la dirección de la casa</label>
+						<input type="text" class="form-control entrada" required id="direccion" name="direccion">
+
+						<label foinputr="exampleInputEmail1">Ingrese el nombre del propietario</label>
+						<input type="text" class="form-control entrada" required id="propietario" name="propietario">
+
+						<label for="exampleInputEmail1">Ingrese el valor de la casa $</label>
+						<input type="number" class="form-control entrada" required id="valor" name="valor">
+						<br>
+						<button type="button" class="btn btn-primary" id="guardar">Guardar</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-6">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" style="border-radius: 20px; box-shadow: 0px 5px 5px 0px; border: solid 2px #438679;">
+						<div class="carousel-item active">
+						<img src="img/casa1.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa2.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa3.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa4.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa5.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa6.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+
+
+
+	<div class="container formulario" id="formulario2">
+		<div class="row">
+			<div class="col-6">
+				<form id="formularioUpdate">
+					<div class="form-group">
+						<input class="form-control entrada pr-5" required type="text" id="codigo2" name="codigo2">
+
+						<label for="exampleInputEmail1">Ingrese la dirección de la casa</label>
+						<input type="text" class="form-control entrada" required id="direccion2" name="direccion2">
+
+						<label foinputr="exampleInputEmail1">Ingrese el nombre del propietario</label>
+						<input type="text" class="form-control entrada" required id="propietario2" name="propietario2">
+
+						<label for="exampleInputEmail1">Ingrese el valor de la casa $</label>
+						<input type="number" class="form-control entrada" required id="valor2" name="valor2">
+						<br>
+						<button type="button" class="btn btn-primary" id="editar">Editar</button>
+						<button type="button" class="btn btn-primary" id="atras">Atrás</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-6">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" style="border-radius: 20px; box-shadow: 0px 5px 5px 0px; border: solid 2px #438679;">
+						<div class="carousel-item active">
+						<img src="img/casa1.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa2.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa3.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa4.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa5.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/casa6.jpg" class="d-block w-100" style="width: 170px; height: 300px;" alt="...">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+     
+	<div class="container mb-5" id="tabla" style="margin-top: 50px;">
+		<table class="table" style="background: #F3CA7C;">
+			<thead>
+				<tr>
+				<th scope="col">Código</th>
+					<th scope="col">Dirección</th>
+					<th scope="col">Propietario</th>
+					<th scope="col">Valor $</th>
+					<th scope="col">Acción</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+
+	<link rel="stylesheet" href="librerias/bootstrap-4.3.1-dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<script src="librerias/bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

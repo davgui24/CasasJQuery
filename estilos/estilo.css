@@ -1,0 +1,39 @@
+body{
+	text-align: center;
+	/*opacity: 0.3;*/
+	background: url('../img/fondo.jpg') no-repeat center top;
+	background-size: 100%;
+}
+
+
+
+.formulario{
+	margin-top: 50px;
+	padding: 15px;
+	background: #76D7C4;
+	opacity: 0.7;
+	font-weight: bold;
+	border-radius: 10px;
+	border:solid 1px #020202;
+	box-shadow: 0px 10px 10px 0px;
+}
+
+
+
+#codigo, #direccion, #propietario, #valor{
+  margin-right: 5%;
+}
+
+
+.table{
+    border-radius: 10px;
+	box-shadow: 0px 10px 10px 0px;
+}
+
+.entrada:focus { 
+  background-color: #EEF513 !important;
+}
+
+.ancla{
+	cursor: pointer;
+}
